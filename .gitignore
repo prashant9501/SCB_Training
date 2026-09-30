@@ -1,0 +1,75 @@
+# -----------------------------------------------------------------------------------------------
+# What this repository publishes: the Day 1 materials and the files learners need to set them up.
+# Everything else in the workshop folder (Day 2, the capstone, trainer material, build tooling)
+# stays local. To release a later part, add a `!/<folder>/` line below.
+# -----------------------------------------------------------------------------------------------
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/.env.example
+!/ai-fundamentals-banking-presentation.html
+!/Day 1/
+
+# -----------------------------------------------------------------------------------------------
+# Secrets and virtual environments
+# -----------------------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+
+# -----------------------------------------------------------------------------------------------
+# Python and Jupyter
+# -----------------------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.virtual_documents/
+
+# -----------------------------------------------------------------------------------------------
+# Editors and operating systems
+# -----------------------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# -----------------------------------------------------------------------------------------------
+# Files the labs write when they run. Every run recreates them, so they never belong in a commit.
+# -----------------------------------------------------------------------------------------------
+# Lab 3.1
+/Day 1/Module 3 - RAG Foundations/data.csv
+/Day 1/Module 3 - RAG Foundations/chat_data.json
+# Labs 4.1, 4.2 and 7.4 — vector stores and a saved conversation
+banking_faiss_index/
+chroma_banking/
+conversations.json
+# Day 2 (for when it is released): Lab 7.2's checkpoints, Lab 9.1's server and site, the Skills take-home
+quickloan_checkpoints.sqlite
+banking_mcp_server.py
+a2a_card_site/
+/Day 2/Module 7 - LangGraph Workflows/Take-Home/skills/
+*.log
+# Media the Multi-Modal take-home generates beside itself (the repository ships no media files)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp3
+*.mp4
+*.wav
+*.webm

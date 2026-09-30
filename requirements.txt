@@ -1,0 +1,1449 @@
+# Tested versions for the workshop — Python 3.12, Windows. Install with:  pip install -r requirements.txt
+# Every notebook in this folder was run end to end against exactly these versions.
+# (Generated from the build lock; re-verified within a week of delivery.)
+
+accelerate==1.15.0
+    # via unstructured-inference
+aiofile==3.12.3
+    # via py-key-value-aio
+aiofiles==24.1.0
+    # via
+    #   crewai
+    #   unstructured-client
+aiohappyeyeballs==2.7.1
+    # via aiohttp
+aiohttp==3.14.3
+    # via
+    #   instructor
+    #   kubernetes
+    #   langchain-community
+    #   langchain-tavily
+aiosignal==1.4.0
+    # via aiohttp
+aiosqlite==0.21.0
+    # via
+    #   crewai
+    #   langgraph-checkpoint-sqlite
+annotated-doc==0.0.5
+    # via typer
+annotated-types==0.8.0
+    # via pydantic
+anthropic==1.9.0
+    # via
+    #   workshop labs
+    #   langchain-anthropic
+anyio==4.15.1
+    # via
+    #   anthropic
+    #   google-genai
+    #   groq
+    #   httpx
+    #   httpx2
+    #   jupyter-server
+    #   langsmith
+    #   mcp
+    #   openai
+    #   py-key-value-aio
+    #   sse-starlette
+    #   starlette
+    #   watchfiles
+appdirs==1.4.4
+    # via
+    #   crewai
+    #   crewai-cli
+    #   crewai-core
+argon2-cffi==25.1.0
+    # via jupyter-server
+argon2-cffi-bindings==26.1.0
+    # via argon2-cffi
+arrow==1.4.0
+    # via isoduration
+asttokens==3.0.2
+    # via stack-data
+async-lru==2.3.0
+    # via jupyterlab
+attrs==26.1.0
+    # via
+    #   aiohttp
+    #   cyclopts
+    #   jsonschema
+    #   jsonschema-path
+    #   referencing
+authlib==1.8.0
+    # via fastmcp-slim
+babel==2.18.0
+    # via jupyterlab-server
+backoff==2.2.1
+    # via posthog
+bcrypt==5.0.0
+    # via chromadb
+beartype==0.22.9
+    # via py-key-value-aio
+beautifulsoup4==4.15.0
+    # via
+    #   gdown
+    #   nbconvert
+    #   unstructured
+bleach==6.4.0
+    # via nbconvert
+blis==1.3.3
+    # via thinc
+build==1.6.1
+    # via chromadb
+cachetools==7.2.0
+    # via py-key-value-aio
+caio==0.12.9
+    # via aiofile
+catalogue==2.0.10
+    # via
+    #   spacy
+    #   srsly
+    #   thinc
+cel-python==0.5.0
+    # via crewai
+certifi==2026.7.22
+    # via
+    #   crewai-cli
+    #   httpcore
+    #   httpx
+    #   kubernetes
+    #   langchain-openai
+    #   requests
+cffi==2.1.1
+    # via
+    #   argon2-cffi-bindings
+    #   cryptography
+charset-normalizer==3.5.1
+    # via
+    #   pdfminer-six
+    #   requests
+    #   unstructured
+chromadb==1.1.1
+    # via
+    #   workshop labs
+    #   crewai
+    #   langchain-chroma
+click==8.5.0
+    # via
+    #   crewai
+    #   crewai-cli
+    #   huggingface-hub
+    #   nltk
+    #   python-oxmsg
+    #   spacy
+    #   uvicorn
+cloudpathlib==0.25.0
+    # via weasel
+cloudpickle==3.1.2
+    # via joblib
+colorama==0.4.6
+    # via
+    #   build
+    #   ipython
+    #   tqdm
+    #   typer
+    #   wasabi
+comm==0.2.3
+    # via
+    #   ipykernel
+    #   ipywidgets
+confection==1.3.3
+    # via
+    #   spacy
+    #   thinc
+    #   weasel
+contourpy==1.4.0
+    # via matplotlib
+crewai==1.15.23
+    # via workshop labs
+crewai-cli==1.15.23
+    # via crewai
+crewai-core==1.15.23
+    # via
+    #   crewai
+    #   crewai-cli
+cryptography==50.0.1
+    # via
+    #   authlib
+    #   crewai-cli
+    #   crewai-core
+    #   google-auth
+    #   joserfc
+    #   msoffcrypto-tool
+    #   pdfminer-six
+    #   pyjwt
+    #   unstructured-client
+cycler==0.12.1
+    # via matplotlib
+cyclopts==5.1.0
+    # via fastmcp-slim
+cymem==2.0.13
+    # via
+    #   preshed
+    #   spacy
+    #   thinc
+debugpy==1.8.22
+    # via ipykernel
+defusedxml==0.7.1
+    # via
+    #   nbconvert
+    #   nltk
+deprecation==2.1.0
+    # via lancedb
+distro==1.9.0
+    # via
+    #   google-genai
+    #   groq
+    #   langsmith
+    #   openai
+    #   posthog
+dnspython==2.8.0
+    # via email-validator
+docstring-parser==0.18.0
+    # via
+    #   anthropic
+    #   cyclopts
+    #   instructor
+durationpy==0.11
+    # via kubernetes
+email-validator==2.3.0
+    # via pydantic
+emoji==2.16.0
+    # via unstructured
+et-xmlfile==2.0.0
+    # via openpyxl
+exceptiongroup==1.3.1
+    # via fastmcp-slim
+executing==2.2.1
+    # via stack-data
+faiss-cpu==1.15.1
+    # via workshop labs
+fastjsonschema==2.22.2
+    # via nbformat
+fastmcp==3.4.7
+    # via workshop labs
+fastmcp-slim==3.4.7
+    # via fastmcp
+filelock==3.32.7
+    # via
+    #   gdown
+    #   huggingface-hub
+    #   torch
+    #   unstructured
+filetype==1.2.0
+    # via unstructured
+flatbuffers==25.12.19
+    # via onnxruntime
+fonttools==4.66.1
+    # via matplotlib
+fqdn==1.6.0
+    # via jsonschema
+frozenlist==1.8.0
+    # via
+    #   aiohttp
+    #   aiosignal
+fsspec==2026.9.0
+    # via
+    #   huggingface-hub
+    #   torch
+gdown==6.4.1
+    # via workshop labs
+google-api-core==2.39.0
+    # via google-cloud-vision
+google-auth==2.59.0
+    # via
+    #   google-api-core
+    #   google-cloud-vision
+    #   google-genai
+google-cloud-vision==3.15.0
+    # via unstructured
+google-genai==2.25.0
+    # via workshop labs
+google-re2==1.1.20251105
+    # via cel-python
+googleapis-common-protos==1.75.4
+    # via
+    #   google-api-core
+    #   grpcio-status
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+graphviz==0.21
+    # via workshop labs
+griffelib==2.3.0
+    # via
+    #   fastmcp-slim
+    #   openai-agents
+groq==0.37.1
+    # via
+    #   workshop labs
+    #   langchain-groq
+grpcio==1.84.0
+    # via
+    #   chromadb
+    #   google-api-core
+    #   google-cloud-vision
+    #   grpcio-status
+    #   opentelemetry-exporter-otlp-proto-grpc
+grpcio-status==1.84.0
+    # via google-api-core
+h11==0.16.0
+    # via
+    #   httpcore
+    #   httpcore2
+    #   uvicorn
+hf-xet==1.6.0
+    # via huggingface-hub
+html5lib==1.1
+    # via unstructured
+httpcore==1.0.9
+    # via
+    #   httpx
+    #   unstructured-client
+httpcore2==2.13.1
+    # via httpx2
+httptools==0.8.0
+    # via uvicorn
+httpx==0.28.1
+    # via
+    #   workshop labs
+    #   chromadb
+    #   crewai
+    #   crewai-cli
+    #   crewai-core
+    #   fastmcp-slim
+    #   google-genai
+    #   groq
+    #   huggingface-hub
+    #   jupyterlab
+    #   langchain-core
+    #   langgraph-sdk
+    #   mcp
+    #   openai
+    #   tavily-python
+    #   unstructured-client
+    #   weasel
+httpx-sse==0.4.3
+    # via
+    #   langchain-community
+    #   mcp
+httpx2==2.13.1
+    # via
+    #   anthropic
+    #   langsmith
+huggingface-hub==1.33.0
+    # via
+    #   accelerate
+    #   sentence-transformers
+    #   timm
+    #   tokenizers
+    #   transformers
+    #   unstructured-inference
+idna==3.20
+    # via
+    #   anyio
+    #   email-validator
+    #   httpx
+    #   httpx2
+    #   jsonschema
+    #   requests
+    #   yarl
+imageio-ffmpeg==0.6.0
+    # via workshop labs
+importlib-resources==7.1.0
+    # via chromadb
+installer==0.7.0
+    # via unstructured
+instructor==1.15.4
+    # via crewai
+ipykernel==7.4.0
+    # via
+    #   workshop labs
+    #   jupyter
+    #   jupyter-console
+    #   jupyterlab
+ipython==9.17.1
+    # via
+    #   ipykernel
+    #   ipywidgets
+    #   jupyter-console
+ipython-pygments-lexers==1.1.1
+    # via ipython
+ipywidgets==8.1.9
+    # via
+    #   workshop labs
+    #   jupyter
+isoduration==20.11.0
+    # via jsonschema
+jaraco-classes==3.4.0
+    # via keyring
+jaraco-context==6.1.2
+    # via keyring
+jaraco-functools==4.6.0
+    # via keyring
+jedi==0.20.0
+    # via ipython
+jinja2==3.1.6
+    # via
+    #   instructor
+    #   jupyter-server
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbconvert
+    #   spacy
+    #   torch
+jiter==0.14.0
+    # via
+    #   anthropic
+    #   instructor
+    #   openai
+jmespath==1.1.0
+    # via cel-python
+joblib==1.6.0
+    # via
+    #   nltk
+    #   scikit-learn
+joserfc==1.7.5
+    # via
+    #   authlib
+    #   fastmcp-slim
+jq==1.12.0
+    # via workshop labs
+json-repair==0.60.1
+    # via crewai
+json5==0.10.0
+    # via
+    #   crewai
+    #   jupyterlab-server
+jsonpatch==1.33
+    # via langchain-core
+jsonpointer==3.1.1
+    # via
+    #   jsonpatch
+    #   jsonschema
+jsonref==1.1.0
+    # via
+    #   crewai
+    #   fastmcp-slim
+jsonschema==4.26.0
+    # via
+    #   chromadb
+    #   jupyter-events
+    #   jupyterlab-server
+    #   mcp
+    #   nbformat
+jsonschema-path==0.5.0
+    # via fastmcp-slim
+jsonschema-specifications==2025.9.1
+    # via jsonschema
+jupyter==1.1.1
+    # via workshop labs
+jupyter-builder==1.2.3
+    # via
+    #   jupyterlab
+    #   notebook
+jupyter-client==8.10.0
+    # via
+    #   ipykernel
+    #   jupyter-console
+    #   jupyter-server
+    #   nbclient
+jupyter-console==6.6.3
+    # via jupyter
+jupyter-core==5.9.1
+    # via
+    #   ipykernel
+    #   jupyter-builder
+    #   jupyter-client
+    #   jupyter-console
+    #   jupyter-server
+    #   jupyterlab
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+jupyter-events==0.12.1
+    # via jupyter-server
+jupyter-lsp==2.3.1
+    # via jupyterlab
+jupyter-server==2.21.1
+    # via
+    #   jupyter-lsp
+    #   jupyterlab
+    #   jupyterlab-server
+    #   notebook
+    #   notebook-shim
+jupyter-server-terminals==0.5.4
+    # via jupyter-server
+jupyterlab==4.6.4
+    # via
+    #   jupyter
+    #   notebook
+jupyterlab-pygments==0.3.0
+    # via nbconvert
+jupyterlab-server==2.28.1
+    # via
+    #   jupyterlab
+    #   notebook
+jupyterlab-widgets==3.0.17
+    # via ipywidgets
+keyring==25.7.0
+    # via py-key-value-aio
+kiwisolver==1.5.1
+    # via matplotlib
+kubernetes==36.0.3
+    # via chromadb
+lance-namespace==0.13.0
+    # via lancedb
+lance-namespace-urllib3-client==0.13.0
+    # via lance-namespace
+lancedb==0.30.0
+    # via crewai
+langchain==1.4.3
+    # via
+    #   workshop labs
+    #   langchain-tavily
+langchain-anthropic==1.7.5
+    # via workshop labs
+langchain-chroma==1.0.0
+    # via workshop labs
+langchain-classic==1.0.8
+    # via
+    #   workshop labs
+    #   langchain-community
+langchain-community==0.4.2
+    # via workshop labs
+langchain-core==1.6.6
+    # via
+    #   workshop labs
+    #   langchain
+    #   langchain-anthropic
+    #   langchain-chroma
+    #   langchain-classic
+    #   langchain-community
+    #   langchain-groq
+    #   langchain-mcp-adapters
+    #   langchain-openai
+    #   langchain-tavily
+    #   langchain-text-splitters
+    #   langgraph
+    #   langgraph-checkpoint
+    #   langgraph-prebuilt
+    #   langgraph-sdk
+langchain-groq==1.1.3
+    # via workshop labs
+langchain-mcp-adapters==0.3.2
+    # via workshop labs
+langchain-openai==1.6.6
+    # via workshop labs
+langchain-protocol==0.0.19
+    # via
+    #   langchain-core
+    #   langgraph-sdk
+langchain-tavily==0.2.18
+    # via workshop labs
+langchain-text-splitters==1.1.2
+    # via
+    #   workshop labs
+    #   langchain-classic
+langdetect==1.0.9
+    # via unstructured
+langgraph==1.2.12
+    # via
+    #   workshop labs
+    #   langchain
+langgraph-checkpoint==4.2.0
+    # via
+    #   langgraph
+    #   langgraph-checkpoint-sqlite
+    #   langgraph-prebuilt
+langgraph-checkpoint-sqlite==3.1.1
+    # via workshop labs
+langgraph-prebuilt==1.1.0
+    # via langgraph
+langgraph-sdk==0.4.5
+    # via langgraph
+langsmith==0.14.1
+    # via
+    #   workshop labs
+    #   langchain-classic
+    #   langchain-community
+    #   langchain-core
+lark==1.3.1
+    # via
+    #   cel-python
+    #   rfc3987-syntax
+linkify-it-py==2.2.0
+    # via markdown-it-py
+llvmlite==0.49.0
+    # via numba
+lxml==6.1.3
+    # via
+    #   pikepdf
+    #   python-docx
+    #   python-pptx
+    #   unstructured
+markdown==3.11
+    # via unstructured
+markdown-it-py==4.2.0
+    # via
+    #   mdit-py-plugins
+    #   rich
+    #   textual
+markupsafe==3.0.3
+    # via
+    #   jinja2
+    #   nbconvert
+matplotlib==3.11.2
+    # via
+    #   workshop labs
+    #   unstructured-inference
+matplotlib-inline==0.2.2
+    # via
+    #   ipykernel
+    #   ipython
+mcp==1.28.1
+    # via
+    #   workshop labs
+    #   crewai
+    #   fastmcp-slim
+    #   langchain-mcp-adapters
+    #   openai-agents
+mdit-py-plugins==0.6.1
+    # via textual
+mdurl==0.1.2
+    # via markdown-it-py
+mistune==3.3.4
+    # via nbconvert
+ml-dtypes==0.6.0
+    # via onnx
+mmh3==5.3.0
+    # via chromadb
+more-itertools==11.1.0
+    # via
+    #   jaraco-classes
+    #   jaraco-functools
+    #   openai-whisper
+mpmath==1.3.0
+    # via sympy
+msoffcrypto-tool==6.0.0
+    # via unstructured
+multidict==6.9.1
+    # via
+    #   aiohttp
+    #   yarl
+murmurhash==1.0.15
+    # via
+    #   preshed
+    #   spacy
+    #   thinc
+narwhals==2.26.0
+    # via scikit-learn
+nbclient==0.11.0
+    # via
+    #   workshop labs
+    #   nbconvert
+nbconvert==7.17.1
+    # via
+    #   jupyter
+    #   jupyter-server
+nbformat==5.11.1
+    # via
+    #   workshop labs
+    #   jupyter-server
+    #   nbclient
+    #   nbconvert
+nest-asyncio2==1.7.3
+    # via ipykernel
+networkx==3.7
+    # via
+    #   torch
+    #   unstructured
+nh3==0.3.7
+    # via unstructured
+nltk==3.10.3
+    # via workshop labs
+notebook==7.6.3
+    # via jupyter
+notebook-shim==0.2.4
+    # via
+    #   jupyterlab
+    #   notebook
+numba==0.67.0
+    # via
+    #   openai-whisper
+    #   unstructured
+numpy==2.5.3
+    # via
+    #   workshop labs
+    #   accelerate
+    #   blis
+    #   chromadb
+    #   contourpy
+    #   faiss-cpu
+    #   lancedb
+    #   langchain-chroma
+    #   langchain-community
+    #   matplotlib
+    #   ml-dtypes
+    #   numba
+    #   onnx
+    #   onnxruntime
+    #   openai-whisper
+    #   opencv-python
+    #   pandas
+    #   rank-bm25
+    #   scikit-learn
+    #   scipy
+    #   sentence-transformers
+    #   spacy
+    #   thinc
+    #   torchvision
+    #   transformers
+    #   unstructured
+    #   unstructured-inference
+oauthlib==4.0.0
+    # via requests-oauthlib
+olefile==0.47
+    # via
+    #   msoffcrypto-tool
+    #   python-oxmsg
+onnx==1.23.1
+    # via unstructured-inference
+onnxruntime==1.30.0
+    # via
+    #   chromadb
+    #   unstructured-inference
+openai==2.54.0
+    # via
+    #   workshop labs
+    #   crewai
+    #   instructor
+    #   langchain-openai
+    #   openai-agents
+openai-agents==0.20.0
+    # via workshop labs
+openai-whisper==20250625
+    # via unstructured
+openapi-pydantic==0.5.1
+    # via fastmcp-slim
+opencv-python==5.0.0.93
+    # via unstructured-inference
+openpyxl==3.1.5
+    # via
+    #   crewai
+    #   unstructured
+opentelemetry-api==1.45.0
+    # via
+    #   chromadb
+    #   crewai
+    #   crewai-core
+    #   fastmcp-slim
+    #   google-api-core
+    #   opentelemetry-exporter-http-transport
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+    #   opentelemetry-sdk
+    #   opentelemetry-semantic-conventions
+opentelemetry-exporter-http-transport==0.66b0
+    # via opentelemetry-exporter-otlp-proto-http
+opentelemetry-exporter-otlp-common==0.66b0
+    # via
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-exporter-otlp-proto-common==1.45.0
+    # via
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-exporter-otlp-proto-grpc==1.45.0
+    # via chromadb
+opentelemetry-exporter-otlp-proto-http==1.45.0
+    # via
+    #   crewai
+    #   crewai-core
+opentelemetry-proto==1.45.0
+    # via
+    #   opentelemetry-exporter-otlp-proto-common
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-sdk==1.45.0
+    # via
+    #   chromadb
+    #   crewai
+    #   crewai-core
+    #   opentelemetry-exporter-otlp-common
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-semantic-conventions==0.66b0
+    # via opentelemetry-sdk
+orjson==3.12.0
+    # via
+    #   chromadb
+    #   langgraph-sdk
+    #   langsmith
+ormsgpack==1.12.2
+    # via langgraph-checkpoint
+overrides==7.7.0
+    # via chromadb
+packaging==26.3
+    # via
+    #   accelerate
+    #   build
+    #   crewai-cli
+    #   crewai-core
+    #   deprecation
+    #   faiss-cpu
+    #   fastmcp-slim
+    #   huggingface-hub
+    #   ipykernel
+    #   jupyter-events
+    #   jupyter-server
+    #   jupyterlab
+    #   jupyterlab-server
+    #   lancedb
+    #   langchain-core
+    #   langsmith
+    #   matplotlib
+    #   nbconvert
+    #   onnxruntime
+    #   pikepdf
+    #   spacy
+    #   thinc
+    #   transformers
+    #   unstructured-pytesseract
+    #   weasel
+pandas==2.3.3
+    # via
+    #   workshop labs
+    #   unstructured
+    #   unstructured-inference
+pandocfilters==1.5.1
+    # via nbconvert
+parso==0.8.7
+    # via jedi
+pathable==0.6.0
+    # via jsonschema-path
+pdf2image==1.17.0
+    # via unstructured
+pdfminer-six==20260107
+    # via
+    #   pdfplumber
+    #   unstructured
+    #   unstructured-inference
+pdfplumber==0.11.10
+    # via crewai
+pendulum==3.2.0
+    # via cel-python
+pi-heif==1.4.0
+    # via unstructured
+pikepdf==10.15.0
+    # via unstructured
+pillow==12.3.0
+    # via
+    #   workshop labs
+    #   matplotlib
+    #   pdf2image
+    #   pdfplumber
+    #   pi-heif
+    #   pikepdf
+    #   python-pptx
+    #   torchvision
+    #   unstructured-pytesseract
+platformdirs==4.12.2
+    # via
+    #   fastmcp-slim
+    #   jupyter-core
+    #   textual
+portalocker==2.7.0
+    # via
+    #   crewai
+    #   crewai-core
+posthog==5.4.0
+    # via chromadb
+preshed==3.0.13
+    # via
+    #   spacy
+    #   thinc
+prometheus-client==0.26.0
+    # via jupyter-server
+prompt-toolkit==3.0.53
+    # via
+    #   ipython
+    #   jupyter-console
+propcache==0.5.4
+    # via
+    #   aiohttp
+    #   yarl
+proto-plus==1.28.4
+    # via
+    #   google-api-core
+    #   google-cloud-vision
+protobuf==7.36.2
+    # via
+    #   google-api-core
+    #   google-cloud-vision
+    #   googleapis-common-protos
+    #   grpcio-status
+    #   onnx
+    #   onnxruntime
+    #   opentelemetry-proto
+    #   proto-plus
+psutil==7.2.2
+    # via
+    #   accelerate
+    #   ipython
+    #   unstructured
+pure-eval==0.2.4
+    # via stack-data
+py-key-value-aio==0.4.6
+    # via fastmcp-slim
+pyarrow==25.0.1
+    # via lancedb
+pyasn1==0.6.4
+    # via pyasn1-modules
+pyasn1-modules==0.4.2
+    # via google-auth
+pybase64==1.5.0
+    # via chromadb
+pycparser==3.0
+    # via cffi
+pydantic==2.12.5
+    # via
+    #   workshop labs
+    #   anthropic
+    #   chromadb
+    #   crewai
+    #   crewai-cli
+    #   crewai-core
+    #   fastmcp-slim
+    #   google-genai
+    #   groq
+    #   instructor
+    #   lance-namespace-urllib3-client
+    #   lancedb
+    #   langchain
+    #   langchain-anthropic
+    #   langchain-classic
+    #   langchain-core
+    #   langgraph
+    #   langsmith
+    #   mcp
+    #   openai
+    #   openai-agents
+    #   openapi-pydantic
+    #   pydantic-settings
+    #   spacy
+    #   thinc
+    #   unstructured-client
+    #   weasel
+pydantic-core==2.41.5
+    # via
+    #   instructor
+    #   pydantic
+pydantic-settings==2.15.0
+    # via
+    #   crewai
+    #   crewai-cli
+    #   fastmcp-slim
+    #   langchain-community
+    #   mcp
+pygments==2.21.0
+    # via
+    #   ipython
+    #   ipython-pygments-lexers
+    #   jupyter-console
+    #   nbconvert
+    #   rich
+    #   rich-rst
+    #   textual
+pyjwt==2.15.1
+    # via
+    #   crewai
+    #   crewai-cli
+    #   crewai-core
+    #   mcp
+pymupdf==1.28.2
+    # via workshop labs
+pypandoc-binary==1.17
+    # via unstructured
+pyparsing==3.3.3
+    # via matplotlib
+pypdf==6.19.0
+    # via
+    #   workshop labs
+    #   unstructured
+    #   unstructured-client
+pypdfium2==5.13.0
+    # via
+    #   pdfplumber
+    #   unstructured-client
+    #   unstructured-inference
+pyperclip==1.11.0
+    # via fastmcp-slim
+pypika==0.51.1
+    # via chromadb
+pyproject-hooks==1.3.3
+    # via build
+pysocks==1.7.1
+    # via requests
+python-dateutil==2.9.0.post0
+    # via
+    #   arrow
+    #   jupyter-client
+    #   kubernetes
+    #   lance-namespace-urllib3-client
+    #   matplotlib
+    #   pandas
+    #   pendulum
+    #   posthog
+python-docx==1.2.0
+    # via
+    #   workshop labs
+    #   unstructured
+python-dotenv==1.2.3
+    # via
+    #   workshop labs
+    #   crewai
+    #   crewai-cli
+    #   fastmcp-slim
+    #   pydantic-settings
+    #   uvicorn
+python-iso639==2026.7.23
+    # via unstructured
+python-json-logger==4.2.0
+    # via jupyter-events
+python-magic==0.4.27
+    # via unstructured
+python-multipart==0.0.32
+    # via
+    #   fastmcp-slim
+    #   mcp
+python-oxmsg==0.0.2
+    # via unstructured
+python-pptx==1.0.2
+    # via unstructured
+pytz==2026.4
+    # via pandas
+pywin32==312
+    # via
+    #   mcp
+    #   portalocker
+pywin32-ctypes==0.2.3
+    # via keyring
+pywinpty==3.0.5
+    # via
+    #   jupyter-server
+    #   jupyter-server-terminals
+    #   terminado
+pyyaml==6.0.3
+    # via
+    #   accelerate
+    #   cel-python
+    #   chromadb
+    #   crewai
+    #   fastmcp-slim
+    #   huggingface-hub
+    #   jsonschema-path
+    #   jupyter-events
+    #   kubernetes
+    #   langchain-classic
+    #   langchain-community
+    #   langchain-core
+    #   timm
+    #   transformers
+    #   uvicorn
+pyzmq==27.2.0
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-console
+    #   jupyter-server
+rank-bm25==0.2.2
+    # via workshop labs
+rapidfuzz==3.14.6
+    # via
+    #   unstructured
+    #   unstructured-inference
+referencing==0.37.0
+    # via
+    #   jsonschema
+    #   jsonschema-path
+    #   jsonschema-specifications
+    #   jupyter-events
+regex==2026.1.15
+    # via
+    #   crewai
+    #   nltk
+    #   tiktoken
+    #   transformers
+    #   unstructured
+requests==2.34.2
+    # via
+    #   workshop labs
+    #   gdown
+    #   google-api-core
+    #   google-auth
+    #   google-genai
+    #   instructor
+    #   jupyterlab-server
+    #   kubernetes
+    #   langchain-classic
+    #   langchain-community
+    #   langchain-tavily
+    #   langsmith
+    #   openai-agents
+    #   posthog
+    #   requests-oauthlib
+    #   requests-toolbelt
+    #   spacy
+    #   tavily-python
+    #   tiktoken
+    #   unstructured
+requests-oauthlib==2.0.0
+    # via kubernetes
+requests-toolbelt==1.0.0
+    # via
+    #   langsmith
+    #   unstructured-client
+rfc3339-validator==0.1.4
+    # via
+    #   jsonschema
+    #   jupyter-events
+rfc3986-validator==0.1.1
+    # via
+    #   jsonschema
+    #   jupyter-events
+rfc3987-syntax==1.1.0
+    # via jsonschema
+rich==14.3.4
+    # via
+    #   chromadb
+    #   crewai-cli
+    #   crewai-core
+    #   cyclopts
+    #   fastmcp-slim
+    #   instructor
+    #   rich-rst
+    #   textual
+    #   typer
+rich-rst==2.2.0
+    # via cyclopts
+rpds-py==2026.6.3
+    # via
+    #   jsonschema
+    #   referencing
+safetensors==0.8.0
+    # via
+    #   accelerate
+    #   timm
+    #   transformers
+scikit-learn==1.9.1
+    # via
+    #   workshop labs
+    #   sentence-transformers
+scipy==1.18.1
+    # via
+    #   scikit-learn
+    #   sentence-transformers
+    #   unstructured-inference
+send2trash==2.1.0
+    # via jupyter-server
+sentence-transformers==6.1.0
+    # via workshop labs
+setuptools==84.0.0
+    # via
+    #   spacy
+    #   thinc
+    #   torch
+shellingham==1.5.4
+    # via typer
+six==1.17.0
+    # via
+    #   html5lib
+    #   kubernetes
+    #   langdetect
+    #   posthog
+    #   python-dateutil
+    #   rfc3339-validator
+smart-open==8.0.2
+    # via weasel
+sniffio==1.3.1
+    # via
+    #   anthropic
+    #   google-genai
+    #   groq
+    #   langsmith
+    #   openai
+soupsieve==2.10
+    # via beautifulsoup4
+spacy==3.8.16
+    # via unstructured
+spacy-legacy==3.0.12
+    # via spacy
+spacy-loggers==1.0.5
+    # via spacy
+sqlalchemy==2.1.1
+    # via
+    #   langchain-classic
+    #   langchain-community
+sqlite-vec==0.1.9
+    # via langgraph-checkpoint-sqlite
+srsly==2.5.4
+    # via
+    #   spacy
+    #   thinc
+    #   weasel
+sse-starlette==3.5.0
+    # via mcp
+stack-data==0.6.3
+    # via ipython
+starlette==1.7.0
+    # via
+    #   workshop labs
+    #   fastmcp-slim
+    #   mcp
+    #   sse-starlette
+sympy==1.14.0
+    # via torch
+tavily-python==0.8.4
+    # via workshop labs
+tenacity==9.1.4
+    # via
+    #   chromadb
+    #   google-genai
+    #   instructor
+    #   langchain-community
+    #   langchain-core
+terminado==0.18.1
+    # via
+    #   jupyter-server
+    #   jupyter-server-terminals
+textual==8.2.8
+    # via crewai-cli
+thinc==8.3.13
+    # via spacy
+threadpoolctl==3.7.0
+    # via scikit-learn
+tiktoken==0.14.0
+    # via
+    #   workshop labs
+    #   langchain-openai
+    #   openai-whisper
+    #   tavily-python
+timm==1.0.30
+    # via unstructured-inference
+tinycss2==1.5.1
+    # via bleach
+tokenizers==0.23.2
+    # via
+    #   chromadb
+    #   crewai
+    #   sentence-transformers
+    #   transformers
+tomli==2.0.2
+    # via
+    #   crewai
+    #   crewai-cli
+    #   crewai-core
+tomli-w==1.1.0
+    # via
+    #   crewai
+    #   crewai-cli
+torch==2.14.0
+    # via
+    #   accelerate
+    #   openai-whisper
+    #   sentence-transformers
+    #   timm
+    #   torchvision
+    #   unstructured-inference
+torchvision==0.29.0
+    # via timm
+tornado==6.5.10
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-server
+    #   jupyterlab
+    #   notebook
+    #   terminado
+tqdm==4.70.1
+    # via
+    #   chromadb
+    #   gdown
+    #   huggingface-hub
+    #   lancedb
+    #   nltk
+    #   openai
+    #   openai-whisper
+    #   sentence-transformers
+    #   spacy
+    #   transformers
+    #   unstructured
+traitlets==5.16.1
+    # via
+    #   ipykernel
+    #   ipython
+    #   ipywidgets
+    #   jupyter-builder
+    #   jupyter-client
+    #   jupyter-console
+    #   jupyter-core
+    #   jupyter-events
+    #   jupyter-server
+    #   jupyterlab
+    #   matplotlib-inline
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+transformers==5.17.0
+    # via
+    #   sentence-transformers
+    #   unstructured-inference
+truststore==0.10.4
+    # via
+    #   httpcore2
+    #   httpx2
+typer==0.27.2
+    # via
+    #   chromadb
+    #   instructor
+    #   spacy
+    #   transformers
+    #   weasel
+typing-extensions==4.16.0
+    # via
+    #   aiohttp
+    #   aiosignal
+    #   aiosqlite
+    #   anthropic
+    #   anyio
+    #   beautifulsoup4
+    #   chromadb
+    #   exceptiongroup
+    #   fastmcp-slim
+    #   google-genai
+    #   groq
+    #   grpcio
+    #   httpx2
+    #   huggingface-hub
+    #   jupyter-client
+    #   lance-namespace-urllib3-client
+    #   langchain-core
+    #   langchain-mcp-adapters
+    #   langchain-protocol
+    #   langsmith
+    #   mcp
+    #   onnx
+    #   openai
+    #   openai-agents
+    #   opentelemetry-api
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+    #   opentelemetry-sdk
+    #   opentelemetry-semantic-conventions
+    #   py-key-value-aio
+    #   pydantic
+    #   pydantic-core
+    #   python-docx
+    #   python-oxmsg
+    #   python-pptx
+    #   referencing
+    #   sentence-transformers
+    #   sqlalchemy
+    #   starlette
+    #   textual
+    #   torch
+    #   typing-inspection
+    #   unstructured
+typing-inspection==0.4.4
+    # via
+    #   mcp
+    #   pydantic
+    #   pydantic-settings
+tzdata==2026.4
+    # via
+    #   arrow
+    #   pandas
+    #   pendulum
+uncalled-for==0.4.0
+    # via fastmcp-slim
+unstructured==0.27.10
+    # via workshop labs
+unstructured-client==0.42.12
+    # via unstructured
+unstructured-inference==1.6.13
+    # via unstructured
+unstructured-pytesseract==0.3.15
+    # via
+    #   workshop labs
+    #   unstructured
+uri-template==1.3.0
+    # via jsonschema
+urllib3==2.8.0
+    # via
+    #   gdown
+    #   kubernetes
+    #   lance-namespace-urllib3-client
+    #   opentelemetry-exporter-http-transport
+    #   requests
+uuid-utils==0.17.1
+    # via
+    #   langchain-core
+    #   langsmith
+uv==0.11.33
+    # via crewai-cli
+uvicorn==0.54.0
+    # via
+    #   workshop labs
+    #   chromadb
+    #   fastmcp-slim
+    #   mcp
+wasabi==1.1.3
+    # via
+    #   spacy
+    #   thinc
+    #   weasel
+watchfiles==1.3.0
+    # via
+    #   fastmcp-slim
+    #   uvicorn
+wcwidth==0.9.1
+    # via prompt-toolkit
+weasel==1.0.0
+    # via spacy
+webcolors==25.10.0
+    # via jsonschema
+webencodings==0.6.1
+    # via
+    #   bleach
+    #   html5lib
+    #   tinycss2
+websocket-client==1.9.2
+    # via
+    #   jupyter-server
+    #   kubernetes
+websockets==16.1.1
+    # via
+    #   fastmcp-slim
+    #   google-genai
+    #   langgraph-sdk
+    #   langsmith
+    #   openai-agents
+    #   uvicorn
+widgetsnbextension==4.0.16
+    # via ipywidgets
+wrapt==2.5.0
+    # via
+    #   smart-open
+    #   unstructured
+xlrd==2.0.2
+    # via unstructured
+xlsxwriter==3.2.9
+    # via python-pptx
+xxhash==4.0.1
+    # via
+    #   langgraph
+    #   langsmith
+yarl==1.25.1
+    # via aiohttp
+zstandard==0.25.0
+    # via langsmith
