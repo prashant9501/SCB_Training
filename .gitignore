@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------------------------
-# What this repository publishes: the Day 1 materials and the files learners need to set them up.
-# Everything else in the workshop folder (Day 2, the capstone, trainer material, build tooling)
+# What this repository publishes: the Day 1 and Day 2 materials and the files learners need to set
+# them up. Everything else in the workshop folder (the capstone, trainer material, build tooling)
 # stays local. To release a later part, add a `!/<folder>/` line below.
 # -----------------------------------------------------------------------------------------------
 /*
@@ -10,6 +10,7 @@
 !/.env.example
 !/ai-fundamentals-banking-presentation.html
 !/Day 1/
+!/Day 2/
 
 # -----------------------------------------------------------------------------------------------
 # Secrets and virtual environments

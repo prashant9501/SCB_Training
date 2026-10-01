@@ -2,19 +2,25 @@
 
 *Created by Prashant Sahu · [LinkedIn](https://www.linkedin.com/in/prashantksahu/)*
 
-This repository holds the **Day 1** materials: four modules, seven session labs, three take-home labs and the
-slide decks. Every notebook has been run top to bottom on the exact versions in `requirements.txt`. The outputs
-under its cells come from that run, apart from the few cells listed under
-[Cells without a fresh output](#cells-without-a-fresh-output).
+This repository holds the **Day 1** and **Day 2** materials: nine modules, sixteen session labs, five take-home
+labs and the slide decks. The two-week capstone is handed out separately. Every notebook has been run top to
+bottom on the exact versions in `requirements.txt`. The outputs under its cells come from that run, apart from
+the few cells listed under [Cells without a fresh output](#cells-without-a-fresh-output) and the Multi-Modal
+take-home's media.
 
-## What is in Day 1
+## What is in this repository
 
-| Module | Session labs | Take-home |
-|---|---|---|
-| 1 · Prompt Engineering & Structured Outputs | 1.1 Prompting Techniques & Structured Outputs | Prompt Caching · Multi-Modal Prompt Engineering Workflow |
-| 2 · LangChain Deep Dive & LLM Reliability | 2.1 LangChain Fundamentals · 2.2 LLM Robustness: Retries, Fallback & Hallucination Signals | |
-| 3 · RAG Foundations | 3.1 Document Loaders & Chunking · 3.2 Embeddings & Semantic Search | |
-| 4 · Production RAG | 4.1 End-to-End RAG with LCEL & Citations · 4.2 Conversational RAG | Advanced Retrieval Strategies |
+| Day | Module | Session labs | Take-home |
+|---|---|---|---|
+| 1 | 1 · Prompt Engineering & Structured Outputs | 1.1 Prompting Techniques & Structured Outputs | Prompt Caching · Multi-Modal Prompt Engineering Workflow |
+| 1 | 2 · LangChain Deep Dive & LLM Reliability | 2.1 LangChain Fundamentals · 2.2 LLM Robustness: Retries, Fallback & Hallucination Signals | |
+| 1 | 3 · RAG Foundations | 3.1 Document Loaders & Chunking · 3.2 Embeddings & Semantic Search | |
+| 1 | 4 · Production RAG | 4.1 End-to-End RAG with LCEL & Citations · 4.2 Conversational RAG | Advanced Retrieval Strategies |
+| 2 | 5 · AI Agents — Tools, Tool Calling & ReAct | 5.1 Tool-Calling Agents & the ReAct Loop | |
+| 2 | 6 · Agentic RAG in Practice | 6.1 Financial Analyst Agentic RAG | |
+| 2 | 7 · LangGraph Workflows | 7.1 Routing · 7.2 Human-in-the-Loop, Memory & Checkpointing · 7.3 Parallelization with `Send` · 7.4 Corrective & Adaptive RAG | Context Window Management & Compaction · Reusable Skills & Prompt Optimization |
+| 2 | 8 · Multi-Framework Agents | 8.1 OpenAI Agents SDK — Banking Concierge · 8.2 CrewAI — FinTech Content Pipeline | |
+| 2 | 9 · MCP & Agent Interoperability | 9.1 MCP & A2A Protocol Deep Dive | |
 
 The slide decks sit at the top of the `Day 1` folder, numbered in teaching order. Each is a single HTML file,
 so open it in any browser:
@@ -28,9 +34,14 @@ One more deck sits at the top of the repository: *AI Fundamentals & Applications
 (`ai-fundamentals-banking-presentation.html`).
 
 Data files sit **beside the notebook that reads them**:
-- `Module 3 - RAG Foundations/` — a sample Markdown file (`langchain_readme_sample.md`) and two PDFs.
-- `Module 4 - Production RAG/docs/` — nine banking-policy documents.
-- `Module 4 - Production RAG/Take-Home/rag_docs/` — research papers and a Wikipedia extract.
+- `Day 1/Module 3 - RAG Foundations/` — a sample Markdown file (`langchain_readme_sample.md`) and two PDFs.
+- `Day 1/Module 4 - Production RAG/docs/` — nine banking-policy documents.
+- `Day 1/Module 4 - Production RAG/Take-Home/rag_docs/` — research papers and a Wikipedia extract.
+- `Day 2/Module 6 - Agentic RAG in Practice/` — a SQLite database (`database/`) and five investment-policy PDFs
+  (`docs/`).
+- `Day 2/Module 7 - LangGraph Workflows/docs/` — the same nine banking-policy documents as Module 4, for Lab 7.4.
+- `Day 2/Module 7 - LangGraph Workflows/Take-Home/ShopSmart Data/` — the support data the context-management
+  take-home reads.
 
 Leave them where they are.
 
@@ -44,6 +55,13 @@ Day 1/
 ├── Module 3 - RAG Foundations/                          Lab_3.1_….ipynb · Lab_3.2_….ipynb · sample files
 └── Module 4 - Production RAG/                           Lab_4.1_….ipynb · Lab_4.2_….ipynb · docs/
     └── Take-Home/  Advanced_Retrieval_Strategies.ipynb · rag_docs/
+Day 2/
+├── Module 5 - AI Agents - Tools, Tool Calling & ReAct/  Lab_5.1_….ipynb
+├── Module 6 - Agentic RAG in Practice/                 Lab_6.1_….ipynb · database/ · docs/
+├── Module 7 - LangGraph Workflows/                     Lab_7.1 … Lab_7.4_….ipynb · docs/
+│   └── Take-Home/  Context_Window_Management_….ipynb · Reusable_Skills_….ipynb · ShopSmart Data/
+├── Module 8 - Multi-Framework Agents/                  Lab_8.1_….ipynb · Lab_8.2_….ipynb
+└── Module 9 - MCP & Agent Interoperability/            Lab_9.1_….ipynb
 ```
 
 ## Getting started
@@ -77,13 +95,14 @@ by `.gitignore`: never paste a key into a notebook cell, and never commit `.env`
 | Needed from | Key | Where | Used by |
 |---|---|---|---|
 | Module 1 | `OPENAI_API_KEY` | supplied by the trainer on the workshop VM; otherwise platform.openai.com/api-keys | every lab |
-| Module 2 | `GROQ_API_KEY` | console.groq.com/keys | 2.1, 2.2 |
+| Module 2 | `GROQ_API_KEY` | console.groq.com/keys | 2.1, 2.2, 5.1 |
 | Module 2 | `LANGSMITH_API_KEY` | smith.langchain.com → Settings → API Keys | 2.2 |
-| Take-home labs | `ANTHROPIC_API_KEY` | console.anthropic.com/settings/keys | Prompt Caching, Advanced Retrieval |
+| Module 5 | `TAVILY_API_KEY` | app.tavily.com | 5.1, 6.1, 7.4 |
+| Module 5 | `WEATHER_API_KEY` | weatherapi.com/signup.aspx | 5.1 |
+| Take-home labs | `ANTHROPIC_API_KEY` | console.anthropic.com/settings/keys | Prompt Caching, Advanced Retrieval, both Module 7 take-homes |
 | Take-home labs | `GEMINI_API_KEY` | aistudio.google.com/app/apikey | Prompt Caching |
 
-Groq, LangSmith and Gemini have free tiers; OpenAI and Anthropic bill per use. `.env.example` also lists two
-keys that only the Day 2 labs use; leave them empty for now.
+Groq, LangSmith, Tavily, WeatherAPI and Gemini have free tiers; OpenAI and Anthropic bill per use.
 
 ## How each lab is laid out
 
@@ -92,8 +111,11 @@ keys that only the Day 2 labs use; leave them empty for now.
 - Every notebook's set-up has the same two cells:
   - a package report (the install line is commented out, because the VM has everything);
   - `load_keys(...)`, which stops with instructions if a key the lab needs is missing.
-- Some labs write working files when they run (a FAISS index, a Chroma store, a saved conversation). They are
-  recreated on every run, so deleting them is always safe, and `.gitignore` keeps them out of commits.
+- Some labs write working files when they run (a FAISS index, a Chroma store, a saved conversation, a checkpoint
+  database, an MCP server script). They are recreated on every run, so deleting them is always safe, and
+  `.gitignore` keeps them out of commits.
+- Lab 9.1 starts a local MCP server on port 8765 and a small web server for an agent card on port 8766, and
+  stops both at the end.
 
 **One expected warning.** Several RAG labs import from `langchain-community`, which LangChain stopped
 maintaining in May 2026. The loaders and vector stores used from it have no maintained replacement yet, so the
@@ -107,10 +129,13 @@ A few cells need something the machine that ran the notebooks did not have:
 | Cells | They need | What the notebook shows |
 |---|---|---|
 | Lab 3.1 — the two `hi_res` PDF cells (after the session) | Tesseract OCR and Poppler, on PATH (installed on the VM) | No output until you run them |
+| Labs 5.1, 6.1 and 7.4 — the web-search and weather calls, and the agent runs that use them | `TAVILY_API_KEY`, `WEATHER_API_KEY` — keys you create | No output until you run them |
+| Lab 6.1 §10 — the Graphviz ReAct diagram | Graphviz (installed on the VM) | No output until you run it |
 | Multi-Modal take-home — the video steps, and the cells built on a video | Access to a paid video model (Sora) | The original course run's output where it had one, otherwise none |
 
-The Multi-Modal take-home also writes its generated images and audio beside the notebook. `.gitignore` keeps
-those files out of commits too.
+The Multi-Modal take-home shows the **original course run's** images, videos and audio throughout, so every
+medium matches the prompt printed above it; a fresh run generates new ones. It also writes the media it
+generates beside the notebook. `.gitignore` keeps those files out of commits too.
 
 ## Running on Colab
 
